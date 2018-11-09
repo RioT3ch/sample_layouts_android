@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/rel_oreder_list">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/sdfx"
+            android:id="@+id/img_order_pic"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_order_lable"
+            android:layout_toEndOf="@+id/img_order_pic"
+            android:text="Phantom Assassin"
+            android:textSize="14sp"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_order_detail"
+            android:layout_below="@+id/tv_order_lable"
+            android:text="Size : very small"
+            android:layout_toEndOf="@+id/img_order_pic"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"/>
+
+        <!--this section includes + - buttons and text between them -->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel_oreder_list_btnsection"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/tv_order_detail"
+            android:layout_toRightOf="@+id/img_order_pic"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/gradient1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="-"
+                android:textSize="20sp"
+                android:id="@+id/btn_decrement"
+                />
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/gradient1"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="+"
+                android:layout_alignParentEnd="true"
+                android:textSize="20sp"
+                android:id="@+id/btn_increment"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_quantity"
+                android:text="Rs. 1599 x 1"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    //Xml of bottom checkout button layout
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/rel_main"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_checkout"
+            android:background="@drawable/gradient1"
+            android:text="Check Out"
+            android:layout_alignParentEnd="true"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/chkbox_all"
+            android:layout_marginLeft="10dp"
+            android:buttonTint="@color/green"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/chkbox_all"
+            android:text="All"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_price"
+            android:text="Price : "
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_price_number"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_price_number"
+            android:text="Rs. 1,599"
+            android:textColor="@color/green"
+            android:textSize="20sp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_checkout"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.zain.about_us_demo.MainActivity">
+
+        //1st cardview
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_top"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <RelativeLayout
+                android:id="@+id/rel_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/back">
+
+                <Button
+                    android:id="@+id/btn_contact"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/colorPrimary"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    android:text="Contact Us"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_contact"
+                    android:layout_marginLeft="@dimen/main_tv_top_margin_left"
+                    android:layout_marginRight="@dimen/main_tv_top_margin_right"
+                    android:layout_marginTop="@dimen/main_tv_top_margin_top"
+                    android:text="Welcome to our shitty company sicko!!"
+                    android:textAlignment="center"
+                    android:textColor="@color/darkback"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        //our team card view
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_people"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_below="@id/cv_top"
+            android:layout_marginLeft="@dimen/team_cv_margin_left"
+            android:layout_marginRight="@dimen/team_cv_margin_right"
+            android:layout_marginTop="@dimen/team_cv_margin_top">
+
+            <RelativeLayout
+                android:id="@+id/rel_people"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/tv_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/team_lable_margin_top"
+                    android:text="Our Team"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/lin_people1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_people"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/team_member_profile_icon_size"
+                        android:layout_height="@dimen/team_member_profile_icon_size"
+                        android:layout_weight="1"
+                        android:src="@drawable/pic" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/team_member_profile_icon_size"
+                        android:layout_height="@dimen/team_member_profile_icon_size"
+                        android:layout_weight="1"
+                        android:src="@drawable/pic" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/team_member_profile_icon_size"
+                        android:layout_height="@dimen/team_member_profile_icon_size"
+                        android:layout_weight="1"
+                        android:src="@drawable/pic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_people_name1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lin_people1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Zain Sarfraz"
+                        android:textAlignment="center"
+                        android:textColor="@color/darkback"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Zain Sarfraz"
+                        android:textAlignment="center"
+                        android:textColor="@color/darkback"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Zain Sarfraz"
+                        android:textAlignment="center"
+                        android:textColor="@color/darkback"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_people2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lin_people_name1"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/team_member_profile_icon_size"
+                        android:layout_height="@dimen/team_member_profile_icon_size"
+                        android:layout_weight="1"
+                        android:src="@drawable/pic" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/team_member_profile_icon_size"
+                        android:layout_height="@dimen/team_member_profile_icon_size"
+                        android:layout_weight="1"
+                        android:src="@drawable/pic" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/team_member_profile_icon_size"
+                        android:layout_height="@dimen/team_member_profile_icon_size"
+                        android:layout_weight="1"
+                        android:src="@drawable/pic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_people_name2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lin_people2"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Zain Sarfraz"
+                        android:textAlignment="center"
+                        android:textColor="@color/darkback"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Zain Sarfraz"
+                        android:textAlignment="center"
+                        android:textColor="@color/darkback"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Zain Sarfraz"
+                        android:textAlignment="center"
+                        android:textColor="@color/darkback"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        //about cardview
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_about"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cv_people"
+            android:layout_marginLeft="@dimen/about_cv_margin_left"
+            android:layout_marginRight="@dimen/about_cv_margin_right"
+            android:layout_marginTop="@dimen/about_cv_margin_top">
+
+            <RelativeLayout
+                android:id="@+id/rel_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/tv_about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/about_cv_lable_margin_top"
+                    android:text="About"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/rel_version"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_about"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:background="@drawable/ripple">
+
+                    <ImageView
+                        android:id="@+id/icon_version"
+                        android:layout_width="@dimen/about_icon_size"
+                        android:layout_height="@dimen/about_icon_size"
+                        android:layout_marginLeft="@dimen/about_icon_margin_left"
+                        android:src="@mipmap/ic_version" />
+
+                    <TextView
+                        android:id="@+id/tv_version"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/about_tv_margin_left"
+                        android:layout_toEndOf="@+id/icon_version"
+                        android:text="Version"
+                        android:textColor="@color/darkback"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_version"
+                        android:layout_marginLeft="@dimen/about_tv_margin_left"
+                        android:layout_toEndOf="@id/icon_version"
+                        android:text="4.1.52"
+                        android:textColor="@color/darkback"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_changelog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rel_version"
+                    android:clickable="true"
+                    android:background="@drawable/ripple"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/icon_changelog"
+                        android:layout_width="@dimen/about_icon_size"
+                        android:layout_height="@dimen/about_icon_size"
+                        android:layout_marginLeft="@dimen/about_icon_margin_left"
+                        android:src="@mipmap/ic_changelog" />
+
+                    <TextView
+                        android:id="@+id/tv_changelog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/about_tv_margin_left"
+                        android:layout_toEndOf="@+id/icon_changelog"
+                        android:text="Changelog"
+                        android:textColor="@color/darkback"
+                        android:textSize="14sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_license"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rel_changelog"
+                    android:clickable="true"
+                    android:background="@drawable/ripple"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/icon_license"
+                        android:layout_width="@dimen/about_icon_size"
+                        android:layout_height="@dimen/about_icon_size"
+                        android:layout_marginLeft="@dimen/about_icon_margin_left"
+                        android:src="@mipmap/ic_license" />
+
+                    <TextView
+                        android:id="@+id/tv_license"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/about_tv_margin_left"
+                        android:layout_toEndOf="@+id/icon_license"
+                        android:text="License"
+                        android:textColor="@color/darkback"
+                        android:textSize="14sp" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        //developer cardview
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_author"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cv_about"
+            android:layout_marginLeft="@dimen/about_cv_margin_left"
+            android:layout_marginRight="@dimen/about_cv_margin_right"
+            android:layout_marginTop="@dimen/about_cv_margin_top">
+
+            <RelativeLayout
+                android:id="@+id/rel_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/tv_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Author"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/rel_developer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_author"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:background="@drawable/ripple">
+
+                    <ImageView
+                        android:id="@+id/icon_developer"
+                        android:layout_width="@dimen/about_icon_size"
+                        android:layout_height="@dimen/about_icon_size"
+                        android:layout_marginLeft="@dimen/about_icon_margin_left"
+                        android:src="@mipmap/ic_developer" />
+
+                    <TextView
+                        android:id="@+id/tv_developer_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/about_tv_margin_left"
+                        android:layout_toEndOf="@+id/icon_developer"
+                        android:text="Shaheryar Tariq"
+                        android:textColor="@color/darkback"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_developer_name"
+                        android:layout_marginLeft="@dimen/about_tv_margin_left"
+                        android:layout_toEndOf="@id/icon_developer"
+                        android:text="Pakistan"
+                        android:textColor="@color/darkback"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_portfolio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rel_developer"
+                    android:clickable="true"
+                    android:background="@drawable/ripple"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/icon_portfolio"
+                        android:layout_width="@dimen/about_icon_size"
+                        android:layout_height="@dimen/about_icon_size"
+                        android:layout_marginLeft="@dimen/about_icon_margin_left"
+                        android:src="@mipmap/ic_portfolio" />
+
+                    <TextView
+                        android:id="@+id/tv_portfolio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/about_tv_margin_left"
+                        android:layout_toEndOf="@+id/icon_portfolio"
+                        android:text="View Portfolio"
+                        android:textColor="@color/darkback"
+                        android:textSize="14sp" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        //company cardview
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_company"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cv_author"
+            android:layout_marginLeft="@dimen/about_cv_margin_left"
+            android:layout_marginRight="@dimen/about_cv_margin_right"
+            android:layout_marginTop="@dimen/about_cv_margin_top">
+
+            <RelativeLayout
+                android:id="@+id/rel_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/tv_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/about_tv_margin_left"
+                    android:text="Company"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/rel_company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_company"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:background="@drawable/ripple">
+
+                    <ImageView
+                        android:id="@+id/icon_company"
+                        android:layout_width="@dimen/about_icon_size"
+                        android:layout_height="@dimen/about_icon_size"
+                        android:layout_marginLeft="@dimen/about_icon_margin_left"
+                        android:src="@mipmap/ic_company" />
+
+                    <TextView
+                        android:id="@+id/tv_company_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/about_tv_margin_left"
+                        android:layout_toEndOf="@+id/icon_company"
+                        android:text="Rio fucking company"
+                        android:textColor="@color/darkback"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_company_name"
+                        android:layout_marginLeft="@dimen/about_tv_margin_left"
+                        android:layout_toEndOf="@id/icon_company"
+                        android:text="Android app Specialist"
+                        android:textColor="@color/darkback"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rel_company_name"
+                    android:clickable="true"
+                    android:background="@drawable/ripple"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/icon_address"
+                        android:layout_width="@dimen/about_icon_size"
+                        android:layout_height="@dimen/about_icon_size"
+                        android:layout_marginLeft="@dimen/about_icon_margin_left"
+                        android:src="@mipmap/ic_address" />
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/about_tv_margin_left"
+                        android:layout_toEndOf="@+id/icon_address"
+                        android:text="24th street sqaure block kings landing ,Westroes"
+                        android:textColor="@color/darkback"
+                        android:textSize="14sp" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+</ScrollView>

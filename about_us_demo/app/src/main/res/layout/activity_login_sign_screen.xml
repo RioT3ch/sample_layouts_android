@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zain.about_us_demo.login_sign_screen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rel_root"
+        android:background="@color/snaop_wall_white">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/backlogin2"
+            android:alpha="0.23"
+            android:scaleType="centerCrop"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel_login">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ccapture"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:id="@+id/img_logo_sw"/>
+
+            //edittexts for username and password
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/lin_user_pass"
+                android:weightSum="2"
+                android:layout_below="@+id/img_logo_sw"
+                android:layout_marginTop="60dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:id="@+id/edt_username"
+                    android:hint="Username"
+                    android:textColorHint="#ffffff"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:paddingLeft="10dp"
+                    android:backgroundTint="@color/snap_wall_primary"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:id="@+id/edt_password"
+                    android:textColorHint="#ffffff"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:paddingLeft="10dp"
+                    android:hint="Password"
+                    android:backgroundTint="@color/snap_wall_primary"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_forgot_pass"
+                android:text="Forgot Password?"
+                android:layout_below="@+id/lin_user_pass"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="40dp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_login"
+                android:text="LOGIN"
+                android:textStyle="bold"
+                android:textColor="@color/snap_wall_primary"
+                android:layout_below="@id/lin_user_pass"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/capsule"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
