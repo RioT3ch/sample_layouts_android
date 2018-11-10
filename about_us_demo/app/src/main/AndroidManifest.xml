@@ -22,7 +22,9 @@
         <activity android:name=".checkout_button" />
         <activity android:name=".no_internet" />
         <activity android:name=".login_sign_screen" />
-        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".ShippingActivity" />
+        <activity android:name=".EditAddressActivity"></activity>
     </application>
 
 </manifest>

@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         btn_checkout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(MainActivity.this,login_sign_screen.class);
+                Intent it = new Intent(MainActivity.this,ShippingActivity.class);
                 startActivity(it);
             }
         });

@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_height="wrap_content"
-    android:layout_width="wrap_content"
-    xmlns:android="http://schemas.android.com/apk/res/android" >
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -21,7 +18,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:id="@+id/img_profile_pic"
-            android:src="@drawable/sdfx"
+            android:src="@drawable/back"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/margin_left"
@@ -152,34 +149,10 @@
 
         <!--password-->
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/rel_password"
-            android:layout_below="@+id/rel_email">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/tv_password"
-                android:text="Password"
-                android:layout_marginTop="@dimen/tv_margin_top_bottom"
-                android:layout_marginLeft="@dimen/margin_left"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/tv_password_2"
-                android:layout_below="@+id/tv_password"
-                android:text="*********"
-                android:layout_marginLeft="@dimen/margin_left"
-                android:layout_marginTop="@dimen/tv_margin_top_tv"
-                android:textSize="@dimen/profile_text_size"
-                android:layout_marginBottom="@dimen/tv_margin_top_bottom"/>
-        </RelativeLayout>
 
     </RelativeLayout>
 
 </RelativeLayout>
 
-</ScrollView>
+
