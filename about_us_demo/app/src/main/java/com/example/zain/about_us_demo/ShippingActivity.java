@@ -19,8 +19,8 @@ public class ShippingActivity extends AppCompatActivity {
 
         tv_name=findViewById(R.id.tv_edt_name);
         tv_phone=findViewById(R.id.tv_edt_phone);
-        tv_address=findViewById(R.id.tv_edit_address);
-        tv_city=findViewById(R.id.tv_edt_country);
+        tv_address=findViewById(R.id.tv_edt_address);
+        tv_city=findViewById(R.id.tv_edt_city);
         tv_state=findViewById(R.id.tv_edt_state);
         tv_country=findViewById(R.id.tv_edt_country);
 
@@ -30,6 +30,7 @@ public class ShippingActivity extends AppCompatActivity {
         final String city = tv_city.getText().toString();
         final String state = tv_state.getText().toString();
         final String country = tv_country.getText().toString();
+
 
         rel_edit_btn=findViewById(R.id.rel_btn_edit);
         rel_edit_btn.setOnClickListener(new View.OnClickListener() {
@@ -45,5 +46,6 @@ public class ShippingActivity extends AppCompatActivity {
                 startActivity(it);
             }
         });
+
     }
 }
