@@ -11,7 +11,7 @@ public class ShippingActivity extends AppCompatActivity {
 
     RelativeLayout rel_edit_btn;
     TextView tv_name,tv_phone,tv_address,tv_city,tv_state,tv_country;
-
+    int x=1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,28 +24,31 @@ public class ShippingActivity extends AppCompatActivity {
         tv_state=findViewById(R.id.tv_edt_state);
         tv_country=findViewById(R.id.tv_edt_country);
 
-        final String name = tv_name.getText().toString();
-        final String phone = tv_phone.getText().toString();
-        final String address = tv_address.getText().toString();
-        final String city = tv_city.getText().toString();
-        final String state = tv_state.getText().toString();
-        final String country = tv_country.getText().toString();
+        if(x==1) {
+
+            final String name = tv_name.getText().toString();
+            final String phone = tv_phone.getText().toString();
+            final String address = tv_address.getText().toString();
+            final String city = tv_city.getText().toString();
+            final String state = tv_state.getText().toString();
+            final String country = tv_country.getText().toString();
 
 
-        rel_edit_btn=findViewById(R.id.rel_btn_edit);
-        rel_edit_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it=new Intent(ShippingActivity.this,EditAddressActivity.class);
-                it.putExtra("namestring",name);
-                it.putExtra("phonestring",phone);
-                it.putExtra("addressstring",address);
-                it.putExtra("citystring",city);
-                it.putExtra("statestring",state);
-                it.putExtra("countrystring",country);
-                startActivity(it);
-            }
-        });
-
+            rel_edit_btn = findViewById(R.id.rel_btn_edit);
+            rel_edit_btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent it = new Intent(ShippingActivity.this, EditAddressActivity.class);
+                    it.putExtra("namestring", name);
+                    it.putExtra("phonestring", phone);
+                    it.putExtra("addressstring", address);
+                    it.putExtra("citystring", city);
+                    it.putExtra("statestring", state);
+                    it.putExtra("countrystring", country);
+                    x++;
+                    startActivity(it);
+                }
+            });
+        }
     }
 }

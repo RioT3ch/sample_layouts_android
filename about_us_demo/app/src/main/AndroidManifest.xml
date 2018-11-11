@@ -24,7 +24,8 @@
         <activity android:name=".login_sign_screen" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".ShippingActivity" />
-        <activity android:name=".EditAddressActivity"></activity>
+        <activity android:name=".EditAddressActivity" />
+        <activity android:name=".InstagramLoginActivity"></activity>
     </application>
 
 </manifest>
