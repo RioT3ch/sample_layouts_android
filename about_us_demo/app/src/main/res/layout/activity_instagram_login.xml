@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zain.about_us_demo.InstagramLoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/rel_top"
+        android:background="@drawable/gradient1">
+
+        <ImageView
+            android:id="@+id/icon_title_followers"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/tv_title"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="28dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/instagram_followers" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title"
+            android:text="Get Instagram Followers"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel_top"
+        android:id="@+id/rel_bottom">
+
+        <!--LOgin intagram button-->
+
+        <RelativeLayout
+            android:layout_width="@dimen/instagram_btn_width"
+            android:layout_height="@dimen/instagram_btn_height"
+            android:id="@+id/rel_inst_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btn_instagram_back"
+            android:clickable="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/icon_instagram_btn"
+                android:src="@drawable/icon_instagram_1"
+                android:tint="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login with Instagram"
+                android:id="@+id/btn_title"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:layout_toRightOf="@+id/icon_instagram_btn"
+                />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!--login facebook button-->
+
+        <RelativeLayout
+            android:layout_width="@dimen/instagram_btn_width"
+            android:layout_height="@dimen/instagram_btn_height"
+            android:id="@+id/rel_fb_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/rel_inst_login"
+            android:background="@drawable/btn_instagram_back"
+            android:backgroundTint="@color/dim_white"
+            android:clickable="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/icon_fb_btn"
+                    android:src="@drawable/fb_icon"
+                    android:tint="@color/dodger_blue"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login with Instagram"
+                    android:id="@+id/btn_fb_title"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/dodger_blue"
+                    android:layout_toRightOf="@+id/icon_fb_btn"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
