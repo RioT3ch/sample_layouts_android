@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zain.about_us_demo.InstagramOrderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lin_main"
+        android:orientation="vertical">
+
+        <!--list item 1-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/instagram_order_list_hieght"
+            android:id="@+id/rel_instagram_order1">
+
+            <ImageView
+                android:layout_width="@dimen/instagram_like_image_size"
+                android:layout_height="@dimen/instagram_like_image_size"
+                android:id="@+id/img_insta_like1"
+                android:src="@drawable/heart"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/insta_tv_margin_left"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_instagram_likes_quantity1"
+                android:text="500"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/insta_tv_margin_left"
+                android:layout_toRightOf="@+id/img_insta_like1"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/insta_quantity_font_size"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/instagram_like_image_size"
+                android:layout_height="@dimen/instagram_like_image_size"
+                android:id="@+id/img_insta_hot1"
+                android:layout_toRightOf="@id/tv_instagram_likes_quantity1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/insta_tv_margin_left"
+                android:src="@drawable/fire"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_instagram_price_sale1"
+                android:text="50% OFF"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/instagram_price_btn1"
+                android:alpha="0.7"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/instagram_price_btn1"
+                android:text="$9.99"
+                android:background="@drawable/btn_instagram_back"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/instagram_price_btn_margin"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+        <!--list item 2-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/instagram_order_list_hieght"
+            android:id="@+id/rel_instagram_order2">
+
+            <ImageView
+                android:layout_width="@dimen/instagram_like_image_size"
+                android:layout_height="@dimen/instagram_like_image_size"
+                android:id="@+id/img_insta_like2"
+                android:src="@drawable/heart"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/insta_tv_margin_left"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_instagram_likes_quantity2"
+                android:text="500"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/insta_tv_margin_left"
+                android:layout_toRightOf="@+id/img_insta_like2"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/insta_quantity_font_size"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/instagram_like_image_size"
+                android:layout_height="@dimen/instagram_like_image_size"
+                android:id="@+id/img_insta_hot2"
+                android:layout_toRightOf="@id/tv_instagram_likes_quantity2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/insta_tv_margin_left"
+                android:src="@drawable/fire"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_instagram_price_sale2"
+                android:text="50% OFF"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/instagram_price_btn2"
+                android:alpha="0.7"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/instagram_price_btn2"
+                android:text="$9.99"
+                android:background="@drawable/btn_instagram_back"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/instagram_price_btn_margin"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+        <!--list item 3-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/instagram_order_list_hieght"
+            android:id="@+id/rel_instagram_order3">
+
+            <ImageView
+                android:layout_width="@dimen/instagram_like_image_size"
+                android:layout_height="@dimen/instagram_like_image_size"
+                android:id="@+id/img_insta_like3"
+                android:src="@drawable/heart"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/insta_tv_margin_left"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_instagram_likes_quantity3"
+                android:text="500"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/insta_tv_margin_left"
+                android:layout_toRightOf="@+id/img_insta_like3"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/insta_quantity_font_size"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/instagram_like_image_size"
+                android:layout_height="@dimen/instagram_like_image_size"
+                android:id="@+id/img_insta_hot3"
+                android:layout_toRightOf="@id/tv_instagram_likes_quantity3"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/insta_tv_margin_left"
+                android:src="@drawable/fire"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_instagram_price_sale3"
+                android:text="50% OFF"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/instagram_price_btn3"
+                android:alpha="0.7"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/instagram_price_btn3"
+                android:text="$9.99"
+                android:background="@drawable/btn_instagram_back"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/instagram_price_btn_margin"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+        <!--list item 4-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/instagram_order_list_hieght"
+            android:id="@+id/rel_instagram_order4">
+
+            <ImageView
+                android:layout_width="@dimen/instagram_like_image_size"
+                android:layout_height="@dimen/instagram_like_image_size"
+                android:id="@+id/img_insta_like4"
+                android:src="@drawable/heart"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/insta_tv_margin_left"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_instagram_likes_quantity4"
+                android:text="500"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/insta_tv_margin_left"
+                android:layout_toRightOf="@+id/img_insta_like4"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/insta_quantity_font_size"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/instagram_like_image_size"
+                android:layout_height="@dimen/instagram_like_image_size"
+                android:id="@+id/img_insta_hot4"
+                android:layout_toRightOf="@id/tv_instagram_likes_quantity4"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/insta_tv_margin_left"
+                android:src="@drawable/fire"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_instagram_price_sale4"
+                android:text="50% OFF"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/instagram_price_btn4"
+                android:alpha="0.7"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/instagram_price_btn4"
+                android:text="$9.99"
+                android:background="@drawable/btn_instagram_back"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/instagram_price_btn_margin"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+        <!--list item 5-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/instagram_order_list_hieght"
+            android:id="@+id/rel_instagram_order5">
+
+            <ImageView
+                android:layout_width="@dimen/instagram_like_image_size"
+                android:layout_height="@dimen/instagram_like_image_size"
+                android:id="@+id/img_insta_like5"
+                android:src="@drawable/heart"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/insta_tv_margin_left"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_instagram_likes_quantity5"
+                android:text="500"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/insta_tv_margin_left"
+                android:layout_toRightOf="@+id/img_insta_like5"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/insta_quantity_font_size"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/instagram_like_image_size"
+                android:layout_height="@dimen/instagram_like_image_size"
+                android:id="@+id/img_insta_hot5"
+                android:layout_toRightOf="@id/tv_instagram_likes_quantity5"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/insta_tv_margin_left"
+                android:src="@drawable/fire"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_instagram_price_sale5"
+                android:text="50% OFF"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/instagram_price_btn5"
+                android:alpha="0.7"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/instagram_price_btn5"
+                android:text="$9.99"
+                android:background="@drawable/btn_instagram_back"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/instagram_price_btn_margin"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+        <!--list item 6-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/instagram_order_list_hieght"
+            android:id="@+id/rel_instagram_order6">
+
+            <ImageView
+                android:layout_width="@dimen/instagram_like_image_size"
+                android:layout_height="@dimen/instagram_like_image_size"
+                android:id="@+id/img_insta_like6"
+                android:src="@drawable/heart"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/insta_tv_margin_left"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_instagram_likes_quantity6"
+                android:text="500"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/insta_tv_margin_left"
+                android:layout_toRightOf="@+id/img_insta_like6"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/insta_quantity_font_size"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/instagram_like_image_size"
+                android:layout_height="@dimen/instagram_like_image_size"
+                android:id="@+id/img_insta_hot6"
+                android:layout_toRightOf="@id/tv_instagram_likes_quantity6"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/insta_tv_margin_left"
+                android:src="@drawable/fire"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_instagram_price_sale6"
+                android:text="50% OFF"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/instagram_price_btn6"
+                android:alpha="0.7"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/instagram_price_btn6"
+                android:text="$9.99"
+                android:background="@drawable/btn_instagram_back"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/instagram_price_btn_margin"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

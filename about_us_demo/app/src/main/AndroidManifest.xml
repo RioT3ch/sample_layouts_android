@@ -25,7 +25,8 @@
         <activity android:name=".ProfileActivity" />
         <activity android:name=".ShippingActivity" />
         <activity android:name=".EditAddressActivity" />
-        <activity android:name=".InstagramLoginActivity"></activity>
+        <activity android:name=".InstagramLoginActivity" />
+        <activity android:name=".InstagramOrderActivity"></activity>
     </application>
 
 </manifest>

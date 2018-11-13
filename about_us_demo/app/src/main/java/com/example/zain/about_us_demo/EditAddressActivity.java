@@ -34,11 +34,7 @@ public class EditAddressActivity extends AppCompatActivity {
         edt_country.setText(getIntent().getStringExtra("countrystring"));
 
 //        writing data to other activity
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 1c04becc1456cd0ffa68244af71123c4de0cacb2
         btn_save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

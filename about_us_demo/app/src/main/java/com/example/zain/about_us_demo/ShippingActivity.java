@@ -24,7 +24,7 @@ public class ShippingActivity extends AppCompatActivity {
         tv_state=findViewById(R.id.tv_edt_state);
         tv_country=findViewById(R.id.tv_edt_country);
 
-<<<<<<< HEAD
+
         if(x==1) {
 
             final String name = tv_name.getText().toString();
@@ -51,7 +51,7 @@ public class ShippingActivity extends AppCompatActivity {
                 }
             });
         }
-=======
+
         final String name = tv_name.getText().toString();
         final String phone = tv_phone.getText().toString();
         final String address = tv_address.getText().toString();
@@ -75,6 +75,6 @@ public class ShippingActivity extends AppCompatActivity {
             }
         });
 
->>>>>>> 1c04becc1456cd0ffa68244af71123c4de0cacb2
+
     }
 }

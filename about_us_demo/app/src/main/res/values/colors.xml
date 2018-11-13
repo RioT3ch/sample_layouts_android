@@ -11,4 +11,5 @@
     <color name="white">#ffffff</color>
     <color name="dim_white">#e7e7e7</color>
     <color name="dodger_blue">#1e90ff</color>
+    <color name="gray">#c7bebe</color>
 </resources>
