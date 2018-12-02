@@ -27,7 +27,9 @@
         <activity android:name=".EditAddressActivity" />
         <activity android:name=".InstagramLoginActivity" />
         <activity android:name=".InstagramOrderActivity" />
-        <activity android:name=".VipActivity"></activity>
+        <activity android:name=".VipActivity" />
+        <activity android:name=".DailyFollowersActivity" />
+        <activity android:name=".DailyFollowersFragmentActivity" />
     </application>
 
 </manifest>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zain.about_us_demo.DailyFollowersActivity">
+
+    <!--Top Section-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_top_section"
+        android:padding="10dp"
+        android:background="@color/dim_white"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel_title"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/instagram_profile"
+                android:id="@+id/icon_followers"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_followers_title"
+                android:layout_toRightOf="@+id/icon_followers"
+                android:text="DAILY FOLLOWERS"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rel_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_followers_detail"
+                android:text="Get followers on daily basis! Real growth, Real people!"
+                android:textAlignment="center" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--Bottom Section-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_bottom_section"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:background="@color/dim_white">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_what_can_you_title"
+                android:text="What Can You Get"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Every subscription includes the following features."
+                android:layout_below="@+id/tv_what_can_you_title"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:textAlignment="center"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context="com.example.zain.about_us_demo.DailyFollowersFragmentActivity">
+
+    <RelativeLayout
+        android:layout_width="270dip"
+        android:layout_height="400dip"
+        android:background="@drawable/layout_background"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+
+        <!--top title-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel_top_title"
+            android:padding="20dp"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Premium"
+                android:id="@+id/tv_top_title"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/premium"
+                android:layout_toRightOf="@+id/tv_top_title"
+                android:layout_marginLeft="10dp"
+                />
+
+        </RelativeLayout>
+
+        <!--animation meter-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel_followers_count"
+            android:layout_below="@+id/rel_top_title"
+            android:layout_centerHorizontal="true"
+            >
+
+            <com.shinelw.library.ColorArcProgressBar
+                android:id="@+id/bar1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:back_width="3dp"
+                app:front_color1="@color/dodger_blue"
+                app:front_width="6dp"
+                app:is_need_content="true"
+                app:is_need_title="true"
+                app:is_need_unit="true"
+                app:max_value="200"
+                app:string_title="100% Real People"
+                app:string_unit="Followers/Day"
+                app:total_engle="270" />
+        </RelativeLayout>
+
+        <!--price-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel_price"
+            android:layout_above="@+id/rel_btn_started"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_price"
+                android:textColor="@color/dodger_blue"
+                android:text="$0.06/Followers"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <!--button-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel_btn_started"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="30dp"
+            android:padding="10dp"
+            android:clickable="true"
+            android:background="@drawable/btn_instagram_back"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_get_started"
+                android:text="GET STARTED"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chevron_right_black_24dp"
+                android:tint="@color/white"
+                android:layout_toRightOf="@+id/tv_get_started"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
