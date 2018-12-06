@@ -8,8 +8,8 @@
     tools:context="com.example.zain.about_us_demo.DailyFollowersFragmentActivity">
 
     <RelativeLayout
-        android:layout_width="270dip"
-        android:layout_height="400dip"
+        android:layout_width="200dip"
+        android:layout_height="300dip"
         android:background="@drawable/layout_background"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true">
@@ -41,8 +41,8 @@
 
         <!--animation meter-->
         <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:id="@+id/rel_followers_count"
             android:layout_below="@+id/rel_top_title"
             android:layout_centerHorizontal="true"
@@ -50,8 +50,8 @@
 
             <com.shinelw.library.ColorArcProgressBar
                 android:id="@+id/bar1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 app:back_width="3dp"
@@ -89,7 +89,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/rel_btn_started"
             android:layout_alignParentBottom="true"
-            android:layout_margin="30dp"
+            android:layout_margin="20dp"
             android:padding="10dp"
             android:clickable="true"
             android:background="@drawable/btn_instagram_back"
