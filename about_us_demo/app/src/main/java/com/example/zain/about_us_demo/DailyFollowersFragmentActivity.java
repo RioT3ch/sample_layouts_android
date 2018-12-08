@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.animation.LinearInterpolator;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
+import android.widget.VideoView;
 
 import com.shinelw.library.ColorArcProgressBar;
 
@@ -22,7 +23,7 @@ public class DailyFollowersFragmentActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it=new Intent(DailyFollowersFragmentActivity.this,DailyFollowersActivity.class);
+                Intent it=new Intent(DailyFollowersFragmentActivity.this,VideoDemoActivity.class);
                 startActivity(it);
             }
         });

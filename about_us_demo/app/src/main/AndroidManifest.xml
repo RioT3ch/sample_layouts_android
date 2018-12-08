@@ -30,7 +30,8 @@
         <activity android:name=".VipActivity" />
         <activity android:name=".DailyFollowersActivity" />
         <activity android:name=".DailyFollowersFragmentActivity" />
-        <activity android:name=".LikesCellActivity"></activity>
+        <activity android:name=".LikesCellActivity" />
+        <activity android:name=".VideoDemoActivity"></activity>
     </application>
 
 </manifest>

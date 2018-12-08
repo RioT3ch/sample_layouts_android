@@ -131,9 +131,8 @@
             <ImageView
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:src="@drawable/coin"
+                android:src="@drawable/coins"
                 android:id="@+id/img_coin"
-                android:tint="@color/gray"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="20dp"
                 android:layout_alignParentEnd="true"/>
