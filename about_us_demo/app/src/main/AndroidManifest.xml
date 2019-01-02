@@ -31,7 +31,9 @@
         <activity android:name=".DailyFollowersActivity" />
         <activity android:name=".DailyFollowersFragmentActivity" />
         <activity android:name=".LikesCellActivity" />
-        <activity android:name=".VideoDemoActivity"></activity>
+        <activity android:name=".VideoDemoActivity" />
+        <activity android:name=".InAppPurchaseActivity"></activity>
     </application>
+
 
 </manifest>
