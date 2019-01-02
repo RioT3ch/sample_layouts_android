@@ -32,8 +32,8 @@
         <activity android:name=".DailyFollowersFragmentActivity" />
         <activity android:name=".LikesCellActivity" />
         <activity android:name=".VideoDemoActivity" />
-        <activity android:name=".InAppPurchaseActivity"></activity>
+        <activity android:name=".InAppPurchaseActivity" />
+        <activity android:name=".InstagramOrderDetails"></activity>
     </application>
-
 
 </manifest>

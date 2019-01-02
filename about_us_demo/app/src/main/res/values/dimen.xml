@@ -41,4 +41,9 @@
     <dimen name="instagram_like_image_size">20dp</dimen>
     <dimen name="insta_tv_margin_left">10dp</dimen>
     <dimen name="insta_quantity_font_size">17sp</dimen>
+
+    <!--instagram order details-->
+
+    <dimen name="view_line_icon_margin">7dip</dimen>
+    <dimen name="tv_margin_left_likes_order">20dip</dimen>
 </resources>

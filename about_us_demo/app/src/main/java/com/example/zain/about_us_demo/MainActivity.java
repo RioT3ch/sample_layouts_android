@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         btn_checkout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(MainActivity.this,InAppPurchaseActivity.class);
+                Intent it = new Intent(MainActivity.this,InstagramOrderDetails.class);
                 startActivity(it);
             }
         });

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zain.about_us_demo.InstagramOrderDetails">
+
+    <!--top section-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_top"
+        android:layout_marginTop="25dip"
+        android:layout_marginBottom="25dip">
+        <!--<View-->
+            <!--android:layout_width="3dp"-->
+            <!--android:id="@+id/view_line"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginTop="5dip"-->
+            <!--android:background="@color/gray" />-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 Likes"
+            android:id="@+id/tv_likes_count"
+            android:layout_toRightOf="@+id/icon_heart"
+            android:layout_marginLeft="@dimen/tv_margin_left_likes_order"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:id="@+id/icon_heart"
+            android:src="@drawable/heart"
+            android:layout_marginLeft="5dip"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmed"
+            android:id="@+id/tv_confirmed"
+            android:layout_below="@+id/tv_likes_count"
+            android:layout_marginLeft="@dimen/tv_margin_left_likes_order"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/icon_confirmed"
+            android:layout_marginTop="30dip"/>
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:id="@+id/icon_confirmed"
+            android:src="@drawable/gray_tick_3"
+            android:layout_alignTop="@+id/tv_confirmed"
+            android:layout_marginLeft="@dimen/view_line_icon_margin"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Compeleted"
+            android:id="@+id/tv_order_compelete"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/icon_order_compelete"
+            android:layout_marginLeft="@dimen/tv_margin_left_likes_order"
+            android:layout_below="@+id/tv_confirmed"
+            android:layout_marginTop="30dip"/>
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:id="@+id/icon_order_compelete"
+            android:src="@drawable/gray_tick_3"
+            android:layout_alignTop="@+id/tv_order_compelete"
+            android:layout_marginLeft="@dimen/view_line_icon_margin"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="10dip"
+        android:id="@+id/divider1"
+        android:layout_marginRight="10dip"
+        android:background="@color/dim_white"
+        android:layout_below="@+id/rel_top"/>
+
+    <!--image and likes count section-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_order_detail"
+        android:layout_below="@+id/divider1">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel_photo"
+            android:layout_margin="10dip">
+            <ImageView
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:id="@+id/instagram_image"
+                android:src="@drawable/sdfx"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 Likes"
+                android:id="@+id/likes_count2"
+                android:layout_toRightOf="@+id/instagram_image"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_insta_username"
+            android:text="-@shaheryar_tariq"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dip"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="10dip"
+        android:id="@+id/divider2"
+        android:layout_marginRight="10dip"
+        android:background="@color/dim_white"
+        android:layout_below="@+id/rel_order_detail"/>
+
+    <!--cost section-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_cost_section"
+        android:layout_below="@+id/divider2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cost"
+                    android:textSize="15sp"
+                    android:id="@+id/tv_cost"
+                    android:layout_margin="10dip"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_cost_count"
+                    android:layout_alignParentEnd="true"
+                    android:text="40"
+                    android:textSize="15sp"
+                    android:layout_margin="10dip"/>
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:src="@drawable/coins"
+                    android:layout_toLeftOf="@+id/tv_cost_count"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order Number"
+                    android:textSize="15sp"
+                    android:id="@+id/tv_order_number"
+                    android:layout_margin="10dip"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_order_number_count"
+                    android:layout_alignParentEnd="true"
+                    android:text="12761249812462"
+                    android:textSize="15sp"
+                    android:layout_margin="10dip"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:textSize="15sp"
+                    android:id="@+id/tv_time"
+                    android:layout_margin="10dip"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_time_count"
+                    android:layout_alignParentEnd="true"
+                    android:text="2020-11-19  14:19:55"
+                    android:textSize="15sp"
+                    android:layout_margin="10dip"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="10dip"
+        android:id="@+id/divider3"
+        android:layout_marginRight="10dip"
+        android:background="@color/dim_white"
+        android:layout_below="@+id/rel_cost_section"/>
+
+    <!--contact us-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_contact"
+        android:layout_below="@+id/divider3">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dip"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Need help?"
+                android:id="@+id/tv_need_help" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Us"
+                android:id="@+id/tv_contact"
+                android:layout_toRightOf="@+id/tv_need_help"
+                android:layout_marginLeft="5dip"
+                android:textColor="@color/dodger_blue" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@color/dim_white"
+        android:layout_below="@+id/rel_contact"/>
+
+</RelativeLayout>
