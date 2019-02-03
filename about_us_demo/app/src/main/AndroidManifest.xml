@@ -33,7 +33,8 @@
         <activity android:name=".LikesCellActivity" />
         <activity android:name=".VideoDemoActivity" />
         <activity android:name=".InAppPurchaseActivity" />
-        <activity android:name=".InstagramOrderDetails"></activity>
+        <activity android:name=".InstagramOrderDetails" />
+        <activity android:name=".CropImageActivity"></activity>
     </application>
 
 </manifest>
