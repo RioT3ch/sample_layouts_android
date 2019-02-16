@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zain.about_us_demo.MultipAddressleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lin_main"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:id="@+id/rel_expand">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rel_cell_1"
+                android:clickable="true"
+                android:padding="10dip"
+                android:background="@drawable/ripple_3">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rel_text_1"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@+id/rb_1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_name_1"
+                    android:text="Name1 Name1"
+                    android:textStyle="bold"
+                    android:textSize="17sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_address_first_1"
+                    android:layout_below="@+id/tv_name_1"
+                    android:text="No 21, Street No 12"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_address_last_1"
+                    android:layout_below="@+id/tv_address_first_1"
+                    android:text="Bangalore India"/>
+            </RelativeLayout>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb_1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                />
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rel_btns"
+                android:layout_below="@id/rel_cell_1"
+                android:layout_margin="10dip">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/dodger_blue"
+                    android:text="Deliver to this address"
+                    android:textColor="@color/white"
+                    android:id="@+id/btn_deliver"
+                    android:background="@drawable/ripple_3"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_deliver"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_margin="5dip">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Edit"
+                        android:backgroundTint="@color/gray"
+                        android:background="@drawable/ripple_3"
+                        android:textColor="@color/white"
+                        android:layout_margin="5dip"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Delete"
+                        android:backgroundTint="#de3e3e"
+                        android:background="@drawable/ripple_3"
+                        android:textColor="@color/white"
+                        android:layout_margin="5dip"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
