@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zain.about_us_demo.CropImageActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/img_image"
+        android:layout_above="@+id/lin_crop_btns"
+        android:layout_margin="10dip"
+        android:src="@drawable/pic2"
+        />
+
+    <!--crop buttons-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lin_crop_btns"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dip"
+        android:layout_above="@+id/lin_buttons"
+        android:weightSum="5">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_3x1"
+            android:text="3x1"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@color/dodger_blue"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_3x2"
+            android:text="3x2"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@color/dodger_blue"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_3x3"
+            android:text="3x3"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@color/dodger_blue"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_3x4"
+            android:layout_margin="5dip"
+            android:text="3x4"
+            android:layout_weight="1"
+            android:background="@color/dodger_blue"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_3x5"
+            android:text="3x5"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@color/dodger_blue"/>
+
+    </LinearLayout>
+
+    <!--done and cancel buttons-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lin_buttons"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rel_btn_cancel"
+            android:clickable="true"
+            android:padding="10dip"
+            android:background="@drawable/ripple"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_cancel_black_24dp"
+                android:id="@+id/img_cross"
+                android:layout_marginRight="10dip"
+                android:layout_toLeftOf="@+id/tv_cancel"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:id="@+id/tv_cancel"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rel_btn_done"
+            android:clickable="true"
+            android:padding="10dip"
+            android:background="@drawable/ripple"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_done_black_2"
+                android:id="@+id/img_tick"
+                android:layout_marginRight="10dip"
+                android:layout_toLeftOf="@+id/tv_done"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:id="@+id/tv_done"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
