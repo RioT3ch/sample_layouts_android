@@ -18,7 +18,7 @@ public class loading_animation extends AppCompatActivity {
                 {
                     ex.printStackTrace();
                 }finally {
-                    Intent it=new Intent(loading_animation.this,MultipAddressleActivity.class);
+                    Intent it=new Intent(loading_animation.this,SignUpNew.class);
                     startActivity(it);
                 }
             }

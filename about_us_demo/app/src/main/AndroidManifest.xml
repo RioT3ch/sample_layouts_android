@@ -34,12 +34,11 @@
         <activity android:name=".VideoDemoActivity" />
         <activity android:name=".InAppPurchaseActivity" />
         <activity android:name=".InstagramOrderDetails" />
-<<<<<<< HEAD
         <activity android:name=".FacebookActivity" />
-        <activity android:name=".MultipAddressleActivity"></activity>
-=======
-        <activity android:name=".CropImageActivity"></activity>
->>>>>>> e243cf186ea7c3263c84cff744435013315b75d4
+        <activity android:name=".MultipAddressleActivity" />
+        <activity android:name=".CropImageActivity" />
+        <activity android:name=".SignUpNew" />
+        <activity android:name=".Youtube"></activity>
     </application>
 
 </manifest>

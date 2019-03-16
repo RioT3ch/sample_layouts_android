@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zain.about_us_demo.Youtube">
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="130dip"-->
+        <!--android:id="@+id/rel_cover">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/img_cover"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/back"/>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="70dip"-->
+            <!--android:layout_height="70dip"-->
+            <!--android:id="@+id/img_profile_pic"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:src="@drawable/instagram_profile"-->
+            <!--/>-->
+
+    <!--</RelativeLayout>-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ConcernedPortionofScreen"
+            android:layout_width="match_parent"
+            android:layout_height="250dip"
+            android:background="@color/dim_white"
+            android:orientation="vertical">
+
+            <!-- Parent FrameLayout 'FL' -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="25dp"
+                    android:background="#b2ebf2" >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/img_cover"
+                        android:src="@drawable/back"
+                        android:scaleType="centerCrop"/>
+                </LinearLayout>
+
+                <!-- BL = 50dp -->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dip"
+                    android:layout_height="70dip"
+                    android:layout_gravity="bottom|left"
+                    android:src="@drawable/pic"
+                    android:layout_marginLeft="20dip"/>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ChannelName"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="15dip"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lin_subscribe"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dip"
+                    android:layout_height="30dip" 
+                    android:src="@drawable/youtube"/>
+                <TextView
+                    android:layout_width=""
+                    android:layout_height="" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
