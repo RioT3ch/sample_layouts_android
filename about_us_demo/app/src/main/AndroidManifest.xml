@@ -38,7 +38,9 @@
         <activity android:name=".MultipAddressleActivity" />
         <activity android:name=".CropImageActivity" />
         <activity android:name=".SignUpNew" />
-        <activity android:name=".Youtube"></activity>
+        <activity android:name=".Youtube" />
+        <activity android:name=".Form" />
+        <activity android:name=".EditProfileActivity"></activity>
     </application>
 
 </manifest>

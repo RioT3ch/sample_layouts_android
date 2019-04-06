@@ -18,7 +18,7 @@ public class loading_animation extends AppCompatActivity {
                 {
                     ex.printStackTrace();
                 }finally {
-                    Intent it=new Intent(loading_animation.this,SignUpNew.class);
+                    Intent it=new Intent(loading_animation.this,Form.class);
                     startActivity(it);
                 }
             }

@@ -6,31 +6,11 @@
     android:layout_height="match_parent"
     tools:context="com.example.zain.about_us_demo.Youtube">
 
-    <!--<RelativeLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="130dip"-->
-        <!--android:id="@+id/rel_cover">-->
-
-        <!--<ImageView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:id="@+id/img_cover"-->
-            <!--android:scaleType="centerCrop"-->
-            <!--android:src="@drawable/back"/>-->
-
-        <!--<ImageView-->
-            <!--android:layout_width="70dip"-->
-            <!--android:layout_height="70dip"-->
-            <!--android:id="@+id/img_profile_pic"-->
-            <!--android:layout_alignParentBottom="true"-->
-            <!--android:src="@drawable/instagram_profile"-->
-            <!--/>-->
-
-    <!--</RelativeLayout>-->
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/lin_top"
         android:background="@android:color/white"
         android:orientation="vertical">
 
@@ -46,6 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dip">
 
+                <!--cover photo-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -59,15 +40,17 @@
                         android:scaleType="centerCrop"/>
                 </LinearLayout>
 
-                <!-- BL = 50dp -->
+                <!--profile picture-->
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="70dip"
                     android:layout_height="70dip"
                     android:layout_gravity="bottom|left"
                     android:src="@drawable/pic"
                     android:layout_marginLeft="20dip"/>
+
             </FrameLayout>
 
+            <!--channel name-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -76,23 +59,246 @@
                 android:textSize="20sp"
                 android:layout_marginLeft="20dip"
                 android:layout_marginTop="15dip"/>
+
+            <!--subscribe portion-->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/lin_subscribe"
+                android:layout_marginLeft="20dip"
                 android:orientation="horizontal">
-                <ImageView
-                    android:layout_width="30dip"
-                    android:layout_height="30dip" 
-                    android:src="@drawable/youtube"/>
-                <TextView
-                    android:layout_width=""
-                    android:layout_height="" />
+
+                <!--subscribe button-->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true">
+                    <ImageView
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:id="@+id/img_youtube_logo"
+                        android:src="@drawable/youtube"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SUBSCRIBE"
+                        android:layout_toRightOf="@id/img_youtube_logo"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+                <!--subscriber count-->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dip">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_sub_count"
+                        android:text="2,399,123"
+                        android:layout_centerVertical="true"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Subscibers"
+                        android:layout_marginLeft="10dip"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_sub_count"/>
+                </RelativeLayout>
+
             </LinearLayout>
 
         </LinearLayout>
 
     </LinearLayout>
+
+    <!--&lt;!&ndash;Video&ndash;&gt;-->
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/rel_video_cell"-->
+        <!--android:layout_margin="15dip"-->
+        <!--android:layout_below="@+id/lin_top">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="200dip"-->
+            <!--android:src="@drawable/thumbnail"-->
+            <!--android:id="@+id/img_thumbnail"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="25:30"-->
+            <!--android:padding="2dip"-->
+            <!--android:textSize="11sp"-->
+            <!--android:layout_alignBottom="@id/img_thumbnail"-->
+            <!--android:layout_alignEnd="@+id/img_thumbnail"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:layout_margin="10dip"-->
+            <!--android:background="#000000"/>-->
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="15dip"-->
+            <!--android:layout_below="@+id/img_thumbnail">-->
+            <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                <!--android:layout_width="40dip"-->
+                <!--android:layout_height="40dip"-->
+                <!--android:id="@+id/img_small_dp"-->
+                <!--android:src="@drawable/pic"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/tv_video_title"-->
+                <!--android:layout_toRightOf="@+id/img_small_dp"-->
+                <!--android:layout_marginLeft="10dip"-->
+                <!--android:textSize="15sp"-->
+                <!--android:text="How to make a website 2019 !!!!! || New Video || Video title"/>-->
+        <!--</RelativeLayout>-->
+
+    <!--</RelativeLayout>-->
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dip"-->
+        <!--android:background="@color/dim_white"-->
+        <!--android:layout_below="@+id/rel_video_cell"-->
+        <!--android:layout_marginLeft="15dip"-->
+        <!--android:layout_marginRight="15dip"/>-->
+
+    <!--&lt;!&ndash;bottom navbar&ndash;&gt;-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/lin_bottom_nav_main"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:weightSum="5"-->
+        <!--android:layout_alignParentBottom="true">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/lin_cell_1"-->
+            <!--android:orientation="vertical"-->
+            <!--android:weightSum="2"-->
+            <!--android:clickable="true"-->
+            <!--android:layout_weight="1">-->
+            <!--<ImageView-->
+                <!--android:layout_width="25dip"-->
+                <!--android:layout_height="25dip"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:tint="@color/red"-->
+                <!--android:src="@drawable/ic_home_black_24dp"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Home"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:textColor="@color/red"-->
+                <!--android:layout_weight="1"/>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/lin_cell_2"-->
+            <!--android:orientation="vertical"-->
+            <!--android:weightSum="2"-->
+            <!--android:clickable="true"-->
+            <!--android:layout_weight="1">-->
+            <!--<ImageView-->
+                <!--android:layout_width="25dip"-->
+                <!--android:layout_height="25dip"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:tint="@color/red"-->
+                <!--android:src="@drawable/trending2"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Trending"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:textColor="@color/red"-->
+                <!--android:layout_weight="1"/>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/lin_cell_3"-->
+            <!--android:orientation="vertical"-->
+            <!--android:weightSum="2"-->
+            <!--android:clickable="true"-->
+            <!--android:layout_weight="1">-->
+            <!--<ImageView-->
+                <!--android:layout_width="25dip"-->
+                <!--android:layout_height="25dip"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:tint="@color/red"-->
+                <!--android:src="@drawable/subscription"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Subscription"-->
+                <!--android:textColor="@color/red"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_weight="1"/>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/lin_cell_4"-->
+            <!--android:orientation="vertical"-->
+            <!--android:weightSum="2"-->
+            <!--android:clickable="true"-->
+            <!--android:layout_weight="1">-->
+            <!--<ImageView-->
+                <!--android:layout_width="25dip"-->
+                <!--android:layout_height="25dip"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:tint="@color/red"-->
+                <!--android:src="@drawable/ic_email_black_24dp"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:text="Inbox"-->
+                <!--android:textColor="@color/red"-->
+                <!--android:layout_weight="1"/>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/lin_cell_5"-->
+            <!--android:orientation="vertical"-->
+            <!--android:weightSum="2"-->
+            <!--android:clickable="true"-->
+            <!--android:layout_weight="1">-->
+            <!--<ImageView-->
+                <!--android:layout_width="25dip"-->
+                <!--android:layout_height="25dip"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:tint="@color/red"-->
+                <!--android:src="@drawable/ic_folder_black_24dp"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Library"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:textColor="@color/red"-->
+                <!--android:layout_weight="1"/>-->
+        <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
 
 
 </RelativeLayout>

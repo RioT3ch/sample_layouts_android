@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zain.about_us_demo.ProfileActivity">
+
+    <!--profiepic section-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/rel_profile_pic">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/img_profile_pic"
+            android:src="@drawable/back"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            />
+
+    </RelativeLayout>
+
+    <view
+        android:layout_below="@+id/rel_profile_pic"
+        style="@style/divider"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel_profile_pic"
+        android:id="@+id/rel_profile_data">
+
+        <!--first name-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/ripple"
+            android:id="@+id/rel_active_status">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_active_status"
+                android:text="Active Status"
+                android:layout_marginTop="@dimen/tv_margin_top_bottom"
+                android:layout_marginLeft="@dimen/margin_left"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_active_status_2"
+                android:layout_below="@+id/tv_active_status"
+                android:text="N/A"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginTop="@dimen/tv_margin_top_tv"
+                android:textSize="@dimen/profile_text_size"
+                android:layout_marginBottom="@dimen/tv_margin_top_bottom"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_edit_btn3"
+                android:src="@drawable/ic_edit_black_24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:background="@drawable/ripple_3"
+                android:layout_margin="20dip"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/dim_white"
+            android:layout_below="@id/rel_active_status"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/ripple"
+            android:layout_below="@+id/rel_active_status"
+            android:id="@+id/rel_first_name">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_first_name"
+                android:text="First Name"
+                android:layout_marginTop="@dimen/tv_margin_top_bottom"
+                android:layout_marginLeft="@dimen/margin_left"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_first_name_2"
+                android:layout_below="@+id/tv_first_name"
+                android:text="Shaheryar"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginTop="@dimen/tv_margin_top_tv"
+                android:textSize="@dimen/profile_text_size"
+                android:layout_marginBottom="@dimen/tv_margin_top_bottom"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_edit_btn0"
+                android:src="@drawable/ic_edit_black_24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:background="@drawable/ripple_3"
+                android:layout_margin="20dip"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/dim_white"
+            android:layout_below="@id/rel_first_name"/>
+
+        <!--Last name-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel_last_name"
+            android:clickable="true"
+            android:background="@drawable/ripple"
+            android:layout_below="@+id/rel_first_name">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_last_name"
+                android:text="Last Name"
+                android:layout_marginTop="@dimen/tv_margin_top_bottom"
+                android:layout_marginLeft="@dimen/margin_left"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_last_name_2"
+                android:layout_below="@+id/tv_last_name"
+                android:text="Tariq"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginTop="@dimen/tv_margin_top_tv"
+                android:textSize="@dimen/profile_text_size"
+                android:layout_marginBottom="@dimen/tv_margin_top_bottom"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_edit_btn1"
+                android:src="@drawable/ic_edit_black_24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:background="@drawable/ripple_3"
+                android:layout_margin="20dip"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/dim_white"
+            android:layout_below="@id/rel_last_name"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel_email"
+            android:clickable="true"
+            android:background="@drawable/ripple"
+            android:layout_below="@id/rel_last_name">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_email"
+                android:text="Email"
+                android:layout_marginTop="@dimen/tv_margin_top_bottom"
+                android:layout_marginLeft="@dimen/margin_left"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_email_2"
+                android:layout_below="@+id/tv_email"
+                android:text="abc23@gmail.com"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginTop="@dimen/tv_margin_top_tv"
+                android:textSize="@dimen/profile_text_size"
+                android:layout_marginBottom="@dimen/tv_margin_top_bottom"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/dim_white"
+            android:layout_below="@id/rel_email"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/ripple"
+            android:id="@+id/rel_dob"
+            android:layout_below="@+id/rel_email">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_dob"
+                android:text="Date of Birth"
+                android:layout_marginTop="@dimen/tv_margin_top_bottom"
+                android:layout_marginLeft="@dimen/margin_left"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_dob_2"
+                android:layout_below="@+id/tv_dob"
+                android:text="22-08-2019"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginTop="@dimen/tv_margin_top_tv"
+                android:textSize="@dimen/profile_text_size"
+                android:layout_marginBottom="@dimen/tv_margin_top_bottom"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_edit_btn4"
+                android:src="@drawable/ic_edit_black_24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:background="@drawable/ripple_3"
+                android:layout_margin="20dip"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/dim_white"
+            android:layout_below="@id/rel_dob"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
