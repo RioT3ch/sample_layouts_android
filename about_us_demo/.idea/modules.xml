@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/about_us_demo.iml" filepath="$PROJECT_DIR$/about_us_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/about_us_demo.iml" filepath="$PROJECT_DIR$/about_us_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\GNG 4\Desktop\freelancer\sample_layouts_android\about_us_demo\app\app.iml" filepath="C:\Users\GNG 4\Desktop\freelancer\sample_layouts_android\about_us_demo\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../GNG 4/Desktop/freelancer/sample_layouts_android/about_us_demo/app/app.iml" filepath="$PROJECT_DIR$/../../../../GNG 4/Desktop/freelancer/sample_layouts_android/about_us_demo/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>

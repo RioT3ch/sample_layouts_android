@@ -9,13 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".loading_animation">
+        <activity android:name=".profileWebcriptActivity"></activity>
+        <activity android:name=".registerWecriptActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".splashWebcriptActivity"></activity>
+        <activity android:name=".otpWebcriptActivity" />
+        <activity android:name=".loading_animation" />
         <activity android:name=".Menu" />
         <activity android:name=".checkout" />
         <activity android:name=".MainActivity" />
@@ -40,7 +44,7 @@
         <activity android:name=".SignUpNew" />
         <activity android:name=".Youtube" />
         <activity android:name=".Form" />
-        <activity android:name=".EditProfileActivity"></activity>
+        <activity android:name=".EditProfileActivity" />
     </application>
 
 </manifest>

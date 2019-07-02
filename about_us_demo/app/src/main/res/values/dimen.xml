@@ -46,4 +46,13 @@
 
     <dimen name="view_line_icon_margin">7dip</dimen>
     <dimen name="tv_margin_left_likes_order">20dip</dimen>
+
+    <!--webcript register-->
+    <dimen name="cell_margin_top_webcript">20dip</dimen>
+    <dimen name="cell_margin_left_right_webcript">35dip</dimen>
+    <dimen name="text_padding_webcript">30dip</dimen>
+    <dimen name="view_width_height_webcript">0.5dip</dimen>
+    <dimen name="keypad_font_size_webcript">30sp</dimen>
+    <dimen name="keypad_font_size_alpha_webcript">10sp</dimen>
+
 </resources>

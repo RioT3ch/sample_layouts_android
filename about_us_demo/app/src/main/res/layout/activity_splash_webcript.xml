@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splashWebcriptActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/img_background"
+        android:src="@drawable/background_img_webcript"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"></ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_header"
+        android:background="#BA011233"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WECRIPT"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:padding="30dip"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        android:src="@drawable/logo_webcript_new"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/img_logo_center"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_logo_center"
+        android:text="Welcome to WeCript Family"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dip"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
